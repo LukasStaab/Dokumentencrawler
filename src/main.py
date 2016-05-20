@@ -42,6 +42,7 @@ def dlPDFAndConvert(url,abschluss):
         with open("../res/"+ abschluss +"pdf/" + os.path.basename(url), "wb") as local_file:
             local_file.write(f.read())
 
+        print "converting..."
         #Open local file for convert pdf to txt
         with open("../res/"+ abschluss + "txt/" + os.path.basename(url) + ".txt", "wb") as local_file:
             local_file.write(convert_pdf_to_txt("../res/" + abschluss + "pdf/" + os.path.basename(url)))
