@@ -8,6 +8,7 @@ from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 from cStringIO import StringIO
 
+#yolo
 
 #Methode zum Konvertieren von PDFs
 def convert_pdf_to_txt(path):
